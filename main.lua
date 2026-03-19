@@ -21,8 +21,9 @@ local function touchthem()
         firetouchinterest(pads.Parent.WinPart, root, 1)
         firetouchinterest(pad, root, 1)
         task.wait()
-        touchthem()
     end
+	task.wait(.2)
+    touchthem()
 end
 
 local ui = Instance.new("ScreenGui")
