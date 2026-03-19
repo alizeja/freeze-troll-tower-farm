@@ -11,7 +11,7 @@ local function touchthem()
     for i, pad in pads:GetChildren() do
         if not active then return end
         local root = plr.Character:FindFirstChild("HumanoidRootPart")
-        if not root then task.wait(.05) touchthem() return end
+        if not root then task.wait(.05) return end
         pad.CanCollide = false
         task.spawn(function()
             for i, coin in coins:GetChildren() do
