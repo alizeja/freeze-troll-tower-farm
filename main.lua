@@ -18,6 +18,7 @@ local function touchthem()
                 firetouchinterest(coin, root, 1)
             end
         end)
+		pads.Parent.WinPart.CanCollide = false
         firetouchinterest(pads.Parent.WinPart, root, 1)
         firetouchinterest(pad, root, 1)
         task.wait()
