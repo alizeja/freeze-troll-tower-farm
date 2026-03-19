@@ -15,11 +15,11 @@ local function touchthem()
         pad.CanCollide = false
         task.spawn(function()
             for i, coin in coins:GetChildren() do
-                firetouchinterest(coin, root)
+                firetouchinterest(coin, root, 1)
             end
         end)
-        firetouchinterest(pads.Parent.WinPart, root)
-        firetouchinterest(pad, root)
+        firetouchinterest(pads.Parent.WinPart, root, 1)
+        firetouchinterest(pad, root, 1)
         task.wait()
         touchthem()
     end
